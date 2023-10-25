@@ -26,22 +26,36 @@ function Home2() {
               <br />
               From classic languages like
               <i>
+                <b className="purple"> C++ </b>
+              </i>
+              , and
+              <i>
                 <b className="purple"> Java </b>
               </i>
               , to embracing the dynamic world of{" "}
               <i>
-                <b className="purple"> Javascript </b>
+                <b className="purple"> Javascript, Python </b>
               </i>{" "}
               , and beyond, I've had a blast. &nbsp;
               <br />
               <br />
               My playground includes building Web Apps using{" "}
               <i>
-                <b className="purple"> MERN Stack </b> exploring the
-                <b className="purple"> AI </b>
+                <b className="purple"> MERN Stack </b>{" "}
+              </i>
+              , exploring the{" "}
+              <i>
+                <b className="purple"> AI </b>{" "}
+              </i>
+              frontier, and delving into{" "}
+              <i>
+                <b className="purple"> Machine Learning </b>{" "}
+              </i>
+              and{" "}
+              <i>
+                <b className="purple"> Image Processing </b>
               </i>{" "}
-              frontier, and more.
-              <br />
+              for creative and impactful projects.
               <br />
               Join me on this techy adventure, and let's create some digital
               magic together! 🚀💻
