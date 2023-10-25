@@ -5,9 +5,9 @@ import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import CU from "../../Assets/Projects/CU.png";
+import obba from "../../Assets/Projects/obba.png";
+import bitsOfCode from "../../Assets/Projects/YTDb.png";
 
 function Projects() {
   return (
@@ -21,70 +21,133 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/Jatin4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              imgPath={CU}
+              isYTDb={false}
+              title="Concordia Career Services Application"
+              description={
+                <ul>
+                  <li>
+                    Established a secure backend environment with JWT-based user
+                    authentication, role management, and MongoDB integration,
+                    ensuring robust data security and role-based access control.
+                  </li>
+                  <li>
+                    Managed a 5-member team to build a dynamic environment where
+                    employers can effortlessly post job openings and aspiring
+                    candidates can submit applications.
+                  </li>
+                  <li>
+                    Embraced the Agile development philosophy, executing the
+                    project in focused sprints.
+                  </li>
+                  <li>
+                    Implemented a continuous integration and continuous
+                    deployment (CI/CD) pipeline with comprehensive testing for
+                    the app, ensuring robust code quality and seamless
+                    deployment.
+                  </li>
+                </ul>
+              }
+              ghLink="https://github.com/jatin51997/careerServices"
+              demoLink="https://career-services.vercel.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/Jatin4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              isYTDb={false}
+              title="YTDb"
+              description={
+                <ul>
+                  <li>
+                    Engineered a responsive YouTube insights and recommendation
+                    web app, delivering an intuitive user interface with
+                    essential functionalities.
+                  </li>
+                  <li>
+                    Incorporated a recommendation engine for suggesting channels
+                    and videos based on user preferences.
+                  </li>
+                  <li>
+                    Crafted a review system where users can provide ratings and
+                    write reviews for channels and videos.
+                  </li>
+                  <li>
+                    Optimized data flow and organization by implementing state
+                    management and prop passing techniques in React.
+                  </li>
+                </ul>
+              }
+              ghLink="https://github.com/jatin51997/ytdb-project"
+              demoLink="https://ytdb-project.vercel.app"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/Jatin4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"
+              imgPath={obba}
+              isYTDb={false}
+              title="Optimised Binary Bat Algorithm for classification of White Blood Cells"
+              description={
+                <ul>
+                  <li>
+                    Optimized Binary Bat Algorithm for leukocyte classification,
+                    attracting substantial attention with 100+ citations in the
+                    field.
+                  </li>
+                  <li>
+                    Extracted crucial features from high-dimensional leukocyte
+                    dataset, reducing dimensionality for more relevant insights.
+                  </li>
+                  <li>
+                    Impressive performance with an average accuracy of 97.3% as
+                    compared to using other classifiers (KNN, Logistic
+                    Regression, Random Forest, Decision Tree).
+                  </li>
+                  <li>
+                    Favorable comparison to other nature-inspired algorithms,
+                    demonstrating the algorithm's speed and accuracy in
+                    hematological analysis.
+                  </li>
+                </ul>
+              }
+              ghLink="https://www.sciencedirect.com/science/article/abs/pii/S0263224119300028?via%3Dihub"
+              // demoLink="" <--------Please include a demo link here
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/Jatin4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/Jatin4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
               imgPath={emotion}
-              isBlog={false}
+              isYTDb={false}
               title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/Jatin4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
+              description={
+                <ul>
+                  <li>
+                    Utilizing deep learning and Convolutional Neural Networks
+                    (CNNs) to classify facial emotions.
+                  </li>
+                  <li>
+                    Trained three different architectures (MobileNet v2,
+                    ShuffleNet v2, ResNet 18) on three diverse datasets from
+                    Kaggle.
+                  </li>
+                  <li>
+                    ResNet18 consistently achieved the highest accuracy and
+                    F1-score, with the FER2013 dataset leading overall results.
+                  </li>
+                  <li>
+                    Ablation study highlighted the significant impact of
+                    hyperparameters like class number, image count, and learning
+                    rate on model performance in facial emotion recognition.
+                  </li>
+                </ul>
+              }
+              ghLink="https://github.com/jatin51997/COMP6721_Winter2023_GroupJ"
+              // demoLink=""      <--------Please include a demo link here
             />
           </Col>
         </Row>
