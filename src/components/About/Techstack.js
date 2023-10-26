@@ -6,73 +6,110 @@ import {
   DiNodejs,
   DiMongodb,
   DiPython,
-  DiGit,
   DiJava,
   DiHtml5,
   DiCss3,
-  DiBootstrap,
   DiMysql,
-  DiOracle,
   DiJavascript,
 } from "react-icons/di";
 import {
-  SiRedis,
   SiFirebase,
   SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
   SiExpress,
+  SiOracle,
   SiSpringboot,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
-  return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiCss3 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMysql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
+  const iconSize = "0.75em";
+  const labelSize = "0.25em";
 
-      <Col xs={4} md={2} className="tech-icons">
-        <SiExpress />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSpringboot />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-    </Row>
+  // Define separate arrays for different types of tech
+  const programmingLanguages = [
+    { Icon: CgCPlusPlus, label: "C++" },
+    { Icon: DiJava, label: "Java" },
+    { Icon: DiPython, label: "Python" },
+    { Icon: DiJavascript, label: "JavaScript" },
+  ];
+
+  const webTechnologies = [
+    { Icon: DiHtml5, label: "HTML5" },
+    { Icon: DiCss3, label: "CSS3" },
+  ];
+
+  const databases = [
+    { Icon: DiMysql, label: "MySQL" },
+    { Icon: DiMongodb, label: "MongoDB" },
+    { Icon: SiOracle, label: "Oracle" },
+  ];
+
+  const librariesFrameworks = [
+    { Icon: DiReact, label: "React" },
+    { Icon: SiNextdotjs, label: "Next.js" },
+    { Icon: SiExpress, label: "Express.js" },
+    { Icon: SiFirebase, label: "Firebase" },
+    { Icon: SiSpringboot, label: "Spring Boot" },
+    { Icon: DiNodejs, label: "Node.js" },
+  ];
+
+  return (
+    <div>
+      <h2>Programming Languages</h2>
+      <Row className="justify-content-center mb-4">
+        {programmingLanguages.map((item, index) => (
+          <Col key={index} xs={1} md={1} className="tech-icons">
+            <div className="icon-container">
+              <item.Icon size={iconSize} />
+              <p className="tech-label" style={{ fontSize: labelSize }}>
+                {item.label}
+              </p>
+            </div>
+          </Col>
+        ))}
+      </Row>
+
+      <h2>Web Technologies</h2>
+      <Row className="justify-content-center mb-4">
+        {webTechnologies.map((item, index) => (
+          <Col key={index} xs={1} md={1} className="tech-icons">
+            <div className="icon-container">
+              <item.Icon size={iconSize} />
+              <p className="tech-label" style={{ fontSize: labelSize }}>
+                {item.label}
+              </p>
+            </div>
+          </Col>
+        ))}
+      </Row>
+
+      <h2>Databases</h2>
+      <Row className="justify-content-center mb-4">
+        {databases.map((item, index) => (
+          <Col key={index} xs={1} md={1} className="tech-icons">
+            <div className="icon-container">
+              <item.Icon size={iconSize} />
+              <p className="tech-label" style={{ fontSize: labelSize }}>
+                {item.label}
+              </p>
+            </div>
+          </Col>
+        ))}
+      </Row>
+
+      <h2>Libraries and Frameworks</h2>
+      <Row className="justify-content-center mb-4">
+        {librariesFrameworks.map((item, index) => (
+          <Col key={index} xs={1} md={1} className="tech-icons">
+            <div className="icon-container">
+              <item.Icon size={iconSize} />
+              <p className="tech-label" style={{ fontSize: labelSize }}>
+                {item.label}
+              </p>
+            </div>
+          </Col>
+        ))}
+      </Row>
+    </div>
   );
 }
 

@@ -1,13 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
+import ProjectCard from "./ProjectCards"; // Changed the import to match the correct component name
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
 import CU from "../../Assets/Projects/CU.png";
 import obba from "../../Assets/Projects/obba.png";
-import bitsOfCode from "../../Assets/Projects/YTDb.png";
+import YTDb from "../../Assets/Projects/YTDb.png";
 
 function Projects() {
   return (
@@ -15,7 +14,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Works</strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
@@ -57,7 +56,7 @@ function Projects() {
 
           <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={YTDb}
               isYTDb={false}
               title="YTDb"
               description={
@@ -90,7 +89,7 @@ function Projects() {
             <ProjectCard
               imgPath={obba}
               isYTDb={false}
-              title="Optimised Binary Bat Algorithm for classification of White Blood Cells"
+              title="Optimized Binary Bat Algorithm for classification of White Blood Cells"
               description={
                 <ul>
                   <li>
@@ -115,7 +114,6 @@ function Projects() {
                 </ul>
               }
               ghLink="https://www.sciencedirect.com/science/article/abs/pii/S0263224119300028?via%3Dihub"
-              // demoLink="" <--------Please include a demo link here
             />
           </Col>
 
@@ -147,7 +145,6 @@ function Projects() {
                 </ul>
               }
               ghLink="https://github.com/jatin51997/COMP6721_Winter2023_GroupJ"
-              // demoLink=""      <--------Please include a demo link here
             />
           </Col>
         </Row>

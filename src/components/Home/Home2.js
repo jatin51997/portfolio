@@ -2,12 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.PNG";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-  AiOutlineMail,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -25,45 +20,25 @@ function Home2() {
               proud of.
               <br />
               <br />
-              From classic languages like
-              <i>
-                <b className="purple"> C++ </b>
-              </i>
-              , and
-              <i>
-                <b className="purple"> Java </b>
-              </i>
-              , to embracing the dynamic world of{" "}
-              <i>
-                <b className="purple"> Javascript, Python </b>
-              </i>{" "}
-              , and beyond, I've had a blast. &nbsp;
+              From classic languages like <b className="purple">C++</b>, and{" "}
+              <b className="purple">Java</b>, to embracing the dynamic world of{" "}
+              <b className="purple">Javascript, Python</b>, and beyond, I've had
+              a blast. &nbsp;
               <br />
               <br />
               My playground includes building Web Apps using{" "}
-              <i>
-                <b className="purple"> MERN Stack </b>{" "}
-              </i>
-              , exploring the{" "}
-              <i>
-                <b className="purple"> AI </b>{" "}
-              </i>
-              frontier, and delving into{" "}
-              <i>
-                <b className="purple"> Machine Learning </b>{" "}
-              </i>
-              and{" "}
-              <i>
-                <b className="purple"> Image Processing </b>
-              </i>{" "}
-              for creative and impactful projects.
+              <b className="purple">MERN Stack</b>, exploring the{" "}
+              <b className="purple">AI</b> frontier, and delving into{" "}
+              <b className="purple">Machine Learning</b> and{" "}
+              <b className="purple">Image Processing</b> for creative and
+              impactful projects.
               <br />
               Join me on this techy adventure, and let's create some digital
               magic together! 🚀💻
             </p>
           </Col>
 
-          <Col md={3} className="myAvtar">
+          <Col md={3} className="my-avatar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
@@ -81,8 +56,8 @@ function Home2() {
                 <a
                   href="https://github.com/jatin51997"
                   target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  rel="noopener noreferrer"
+                  className="icon-color home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -90,10 +65,9 @@ function Home2() {
               <li className="social-icons">
                 <a
                   href="mailto:youremail@example.com"
-                  style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-color home-social-icons"
                 >
                   <AiOutlineMail />
                 </a>
@@ -103,8 +77,8 @@ function Home2() {
                 <a
                   href="https://www.linkedin.com/in/jatinnaroraa/"
                   target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  rel="noopener noreferrer"
+                  className="icon-color home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -113,8 +87,8 @@ function Home2() {
                 <a
                   href="https://www.instagram.com/jatinnaroraa"
                   target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
+                  rel="noopener noreferrer"
+                  className="icon-color home-social-icons"
                 >
                   <AiFillInstagram />
                 </a>
@@ -126,4 +100,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
