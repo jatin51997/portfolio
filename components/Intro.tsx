@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import profilePicture from "@/public/profilePicture.jpg";
 import { SocialIcon } from "react-social-icons";
 import { useSectionInView } from "@/lib/hooks";
+import { HiOutlineMail } from 'react-icons/hi';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -47,7 +48,7 @@ export default function Intro() {
           <span className="italic text-yellow-800"> Coffee</span>, 
           <span className="italic font-bold"> Create</span>&apos;! I&apos;m 
           <span className="font-bold"> Jatin Arora, </span>
-          <span className="text-gray-400">
+          <span className="text-gray-400 dark:text-gray-300">
             a back-end virtuoso and MERN stack developer, crafting seamless and powerful digital solutions with Java and the MERN stack!
           </span>
         </p>
@@ -66,18 +67,15 @@ export default function Intro() {
             duration: 2,
           }}
         >
-          {/* <Link
-            href="#contact"
-            className="group text-sm mr-2 bg-emerald-800 text-white px-7 py-3 flex items-center gap-3 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-emerald-900 active:scale-105 transition drop-shadow-lg"
-            //   onClick={() => {
-            //     setActiveSection("Contact");
-            //     setTimeOfLastClick(Date.now());
-            //   }}
-          >
-            Contact me here{" "}
-            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-          </Link> */}
-
+     <div>
+          <Link
+  href="mailto:jatinnaroraa5@gmail.com"
+  className="group text-sm mr-2 bg-emerald-800 text-white px-7 py-3 flex items-center gap-3 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-emerald-900 active:scale-105 transition drop-shadow-lg"
+>
+  Contact me  <HiOutlineMail className="opacity-70 group-hover:translate-x-1 transition" /> jatinnaroraa5@gmail.com {" "}
+ 
+</Link>
+          </div>
           <a
             className="group text-sm bg-white mr-2 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 drop-shadow-lg"
             href="/resume.pdf"
@@ -117,6 +115,9 @@ export default function Intro() {
               target="_blank"
             />
           </div>
+      
+         
+          
         </motion.div>
       </section>
     </div>
