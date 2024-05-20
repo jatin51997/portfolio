@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
 import ProjectSection from "@/components/ProjectsSection";
 import SectionDivider from "@/components/SectionDivider";
-import Contact from "@/components/contact";
+//import Contact from "@/components/contact";
 import Skills from "@/components/skills";
 import Test from "@/components/test";
 
